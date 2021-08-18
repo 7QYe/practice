@@ -34,7 +34,7 @@ class BasePage:
         """
         return self.driver.find_element_by_id(id)
 
-    def find_by_class(self,cls):
+    def find_by_class(self, cls):
         """
         通过class进行查找
         :param cls:
