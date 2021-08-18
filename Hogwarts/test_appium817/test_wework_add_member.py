@@ -4,8 +4,7 @@ author : QY
 
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
-
-from test_appium817.tools import get_name, get_phone
+from faker import Faker
 
 
 class TestWeWork:
@@ -31,8 +30,9 @@ class TestWeWork:
         self.driver.quit()
 
     def test_add_member(self):
-        name = get_name()
-        phone = get_phone()
+        faker = Faker(locale='zh_CN')
+        name = faker.name()
+        phone = faker.phone_number()
         # 点击通讯录
         self.driver.find_element_by_xpath("//*[@text='通讯录']").click()
         # 滑动 查找添加成员元素
