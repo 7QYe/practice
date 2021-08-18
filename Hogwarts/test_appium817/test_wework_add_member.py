@@ -30,7 +30,10 @@ class TestWeWork:
         self.driver.quit()
 
     def test_add_member(self):
+        # 使用Faker库生成随机姓名和手机号
+        # 实例化一个Faker对象
         faker = Faker(locale='zh_CN')
+        # 调用Faker生成随机姓名、手机号的方法
         name = faker.name()
         phone = faker.phone_number()
         # 点击通讯录
