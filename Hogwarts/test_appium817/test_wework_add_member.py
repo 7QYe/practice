@@ -1,6 +1,7 @@
 """
 author : QY
 """
+from time import sleep
 
 from appium import webdriver
 from appium.webdriver.common.mobileby import MobileBy
@@ -55,6 +56,7 @@ class TestWeWork:
         # 点击保存
         self.driver.find_element_by_xpath("//*[@text='保存']").click()
 
+
         # 断言 是否有toast弹框
-        add = self.driver.find_element_by_xpath("//*[@text='添加成功']")
+        add = self.driver.find_element_by_xpath("//*[contains(@text,'添加成功')]")
         assert add
