@@ -1,0 +1,9 @@
+datas:
+  - ["UITEST", 2, 0]
+  - ["", 3, 40072]
+  - ["标签名", 4, 0]
+  - ["123", 5, 0]
+  - ["UITEST", 6, 40071]
+  - ["testtesttesttesttesttesttesttest", 7, 0]
+  - ["testtesttesttesttesttesttesttest1", 8, 40058]
+ids: ['正常','标签名为空','中文','数字','重复名','32位英文','33位英文']
