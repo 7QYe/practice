@@ -66,7 +66,7 @@ class Tag(WeWork):
 
     def add_tag_user(self, data):
         '''
-        获取标签成员
+        添加标签成员
         :return:
         '''
         add_user_url = f"https://qyapi.weixin.qq.com/cgi-bin/tag/addtagusers?access_token={self.token}"
