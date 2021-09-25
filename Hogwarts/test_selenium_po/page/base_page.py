@@ -13,16 +13,13 @@ class BasePage:
     URL = "https://work.weixin.qq.com/"
 
     def __init__(self, driver: WebDriver = None):
-        # 默认访问这个路径，但是子类有声明就会用子类的
-        URL = "https://work.weixin.qq.com/"
         # 如果driver是None就初始化，如果不是None
         if not driver:
             option = Options()
             option.debugger_address = "localhost:9222"
 
             self.driver = webdriver.Chrome(options=option)
-            # self.driver.get(self.url)
-            self.driver.get("https://work.weixin.qq.com/")
+            self.driver.get(self.url)
             self.driver.implicitly_wait(5)
         #     如果是第二次传递driver，
 
